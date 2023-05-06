@@ -1,0 +1,83 @@
+mov recover_pic_startx,0
+    lea ax,pic_sz
+    lea bx,hit_index
+    mov dl,[bx]
+    mov hit_a_sign,dl
+    .if key=='z'&& hit_a_sign==1
+    music 1
+    lea ax,pic_bz
+    .endif
+    mov pic_address,ax
+    call Print_Pic
+
+    ; mov recover_pic_startx,115
+    ; lea ax,pic_sx
+    ; lea bx,hit_index
+    ; mov dl,[bx+1]
+    ; mov hit_a_sign,dl
+    ; .if key=='x'&& hit_a_sign==1
+    ; music 1
+    ; lea ax,pic_bx
+    ; .endif
+    ; mov pic_address,ax
+    ; call Print_Pic
+
+    ; mov recover_pic_startx,230
+    ; lea ax,pic_sc
+    ; lea bx,hit_index
+    ; mov dl,[bx+2]
+    ; mov hit_a_sign,dl
+    ; .if key=='c'&& hit_a_sign==1
+    ; music 1
+    ; lea ax,pic_bc
+    ; .endif
+    ; mov pic_address,ax
+    ; call Print_Pic
+
+    ; mov recover_pic_startx,345
+    ; lea ax,pic_sv
+    ; lea bx,hit_index
+    ; mov dl,[bx+3]
+    ; mov hit_a_sign,dl
+    ; .if key=='v'&& hit_a_sign==1
+    ; music 1
+    ; lea ax,pic_bv
+    ; .endif
+    ; mov pic_address,ax
+    ; call Print_Pic
+
+    ; mov recover_pic_startx,450
+    ; lea ax,pic_sl
+    ; lea bx,hit_index
+    ; mov dl,[bx+4]
+    ; mov hit_a_sign,dl
+    ; .if key==','&& hit_a_sign==1
+    ; music 1
+    ; lea ax,pic_bl
+    ; .endif
+    ; mov pic_address,ax
+    ; call Print_Pic
+
+    ; mov recover_pic_startx,575
+    ; lea ax,pic_sr
+    ; lea bx,hit_index
+    ; mov dl,[bx+5]
+    ; mov hit_a_sign,dl
+    ; .if key=='.'&& hit_a_sign==1
+    ; music 1
+    ; lea ax,pic_br
+    ; .endif
+    ; mov pic_address,ax
+    ; call Print_Pic
+
+    ; mov recover_pic_startx,700
+    ; lea ax,pic_sq
+    ; lea bx,hit_index
+    ; mov dl,[bx+6]
+    ; mov hit_a_sign,dl
+    ; .if key=='/'&& hit_a_sign==1
+    ; music 1
+    ; lea ax,pic_bq
+    ; .endif
+    ; mov pic_address,ax
+    ; call Print_Pic
